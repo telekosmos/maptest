@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Browser" id="1" y="8" width="601" height="545" text="Browser&#xA;http://..." measuredWidth="601" measuredHeight="545"/>
+  <widgets xsi:type="model:Map" id="3" x="208" y="116" width="353" height="293" measuredWidth="353" measuredHeight="293"/>
+  <widgets xsi:type="model:SearchField" id="4" x="24" y="116" width="139" text="Search" measuredWidth="139" measuredHeight="24"/>
+  <widgets xsi:type="model:Table" id="5" x="24" y="152" width="153" height="257" text=" , Name&#xA;[],Peter&#xA;[x],Henri&#xA;[],Olga&#xA;[],[-] You can even&#xA;[],  [+] Make a&#xA;[],  [+] Tree table" measuredWidth="153" measuredHeight="257" alternative="#eeeeee">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="6" x="24" y="428" text="Add" measuredWidth="42" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="7" x="80" y="428" text="Del" measuredWidth="37" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Button" id="8" x="137" y="428" text="Edit" measuredWidth="40" measuredHeight="25">
+    <font/>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font/>
+</model:Screen>

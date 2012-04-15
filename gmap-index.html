@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Google Maps API - Map Type</title>
+<style type="text/css">
+div#map_container{
+	width:100%;
+	height:350px;
+}
+</style>
+<script type="text/javascript" 
+     src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+ 
+<script type="text/javascript">
+  function loadMap() {
+    var latlng = new google.maps.LatLng(37.4220279, -122.0840677);
+    var myOptions = {
+      zoom: 13,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.HYBRID,
+	  mapTypeControlOptions: {
+		style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+		position: google.maps.ControlPosition.TOP_CENTER
+	  }
+    };
+    var map = new google.maps.Map(document.getElementById("map_container"),myOptions);
+ 
+    var marker = new google.maps.Marker({
+      position: latlng, 
+      map: map, 
+      title:"Google Office!"
+    }); 
+ 
+  }
+</script>
+</head>
+ 
+<body onload="loadMap()">
+<div id="map_container"></div>
+</body>
+ 
+</html>
