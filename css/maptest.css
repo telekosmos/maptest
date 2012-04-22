@@ -27,6 +27,8 @@ body, html {
 #gmap3 {
  	margin: 20px auto;
  	border: 1px dashed #C0C0C0;
- 	width: 700px;
- 	height: 350px;
+/* 	width: 700px;
+ 	height: 350px; */
+	width: auto;
+	height: 550px;
 }
