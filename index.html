@@ -33,50 +33,67 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     -->
-  </head>
-<body>
 
+		<script type="text/javascript" src="js/lib/jquery-1.7.2.js"></script>
+<!--		<script type="text/javascript" src="js/lib/jquery-1.4.4.min.js"></script> -->
+		<script type="text/javascript" src="js/lib/mustache.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+		<script type="text/javascript" src="js/lib/gmap3.js"></script>
+
+		<script type="text/javascript" src="resources/json/clients.json.js"></script>
+		<script type="text/javascript" src="js/list-tpl.js"></script>
+  </head>
+
+<body>
 <!-- <div class="container-fluid"> -->
-<div class="container max-height-500 no-overflow">
-	<div class="row-fluid show-grid max-height">
+<div class="container-fluid max-height-500 no-overflow">
+	<div class="row-fluid show-grid">
 <!-- sidebar content, list of loci -->
-		<div class="span3 scrollable">
+		<div class="span3 max-height">
+			Click one
+			<div class="scrollable" id="clientListDiv" style="padding-bottom: 30px">
+
+			</div>
+			So far, so good
 			<!-- <div class="pad40-top"> -->
-			<div>Client list</div>
+			<!--
+			Client list
+			<div class="scrollable" id="list">
 			<table class="table table-striped">
 				<tr><td>
-					Luis Pendejo S.L.
+					a. Luis Pendejo S.L.
 				</td></tr>
 				<tr>
 					<td>
-					Luis Pendejo S.L.
+					b. Luis Pendejo S.L.
 					</td>
 				</tr>
 				<tr>
 					<td>
-					Luis Pendejo S.L.
+					c. Luis Pendejo S.L.
 					</td>
 				</tr>
 				<tr><td>
-					Luis Pendejo S.L.
+					d. Luis Pendejo S.L.
 				</td></tr>
 				<tr><td>
-					Luis Pendejo S.L.
+					e. Luis Pendejo S.L.
 				</td></tr>
 				<tr><td>
-					Luis Pendejo S.L.
+					f. Luis Pendejo S.L.
 				</td></tr>
 				<tr><td>
 					Luis Pendejo S.L.
 				</td></tr>
 			</table>
+			</div>
+			-->
 		</div>
 
 <!-- content area -->
-		<div class="span9 scrollable" style="background-color: #e1e1e8;">
-			<div class="pad40-top">
-			hi-x!
-			</div>
+<!-- TODO pillar si tal el ejemplo fluid, quitarle cosas, adaptar otras a ver... -->
+		<div class="span9" style="background-color: #e1e1e8;">
+				<div id="gmap3"></div>
 		</div>
 	</div>
 </div>
